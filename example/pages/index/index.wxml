@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+    <articleListItem wx:for="{{brandList}}" wx:key="{{index}}"></articleListItem>
+    <nodeListItem wx:for="{{nodeList}}" wx:key="{{index}}"></nodeListItem>
+</view>

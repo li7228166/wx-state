@@ -1,0 +1,7 @@
+/* components/listItem/index.wxss */
+.articleListItem{
+    line-height: 80rpx;
+    padding: 0 30rpx;
+    background-color: #ff6600;
+    color: #fff;
+}

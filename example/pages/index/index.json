@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "nodeListItem": "/components/nodeListItem/index",
+    "articleListItem": "/components/articleListItem/index"
+  }
+}

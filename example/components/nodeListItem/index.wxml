@@ -1,0 +1,2 @@
+<!--components/listItem/index.wxml-->
+<view class="nodeListItem">{{msg}}：nodeListItem</view>
