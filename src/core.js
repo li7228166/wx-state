@@ -94,10 +94,3 @@ export const makeProxy = function (target, keys = []) {
         }
     });
 };
-
-/*
-export default {
-    addCompareItem,
-    removeCompareItem,
-    makeProxy
-};*/

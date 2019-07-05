@@ -17,9 +17,9 @@ export const connect = function (mapStateToData) {
                 nodeId: nodeId,
                 setData: this.setData.bind(this),
                 mapStateToData: mapStateToData.bind(this),
-                data: deepAssign(mapState)
+                data: mapState
             });
-            this.setData(mapState);
+            this.setData(deepAssign(mapState));
         };
 
         //移除当前（Page/Component）对比项；
@@ -53,7 +53,3 @@ export const connect = function (mapStateToData) {
         return component;
     }
 };
-/*
-export default {
-    connect
-};*/

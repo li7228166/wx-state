@@ -1,6 +1,7 @@
 /*
 * 存放未proxy封装的纯净store数据
 * */
+
 const _storeMap = {};
 
 /*
@@ -8,6 +9,13 @@ const _storeMap = {};
 * */
 const add = (key, store) => {
     _storeMap[key] = store;
+};
+
+/*
+* 获得store
+* */
+const get = (key) => {
+    return _storeMap[key];
 };
 
 /*
@@ -56,6 +64,7 @@ const deleteKey = (keys) => {
 
 export default {
     add,
+    get,
     getMap,
     setValue,
     getValue,

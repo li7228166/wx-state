@@ -144,11 +144,3 @@ export const isEqual = (function () {
     };
     return _.isEqual;
 }.call(this));
-
-/*
-export default {
-    isObject,
-    isArray,
-    deepAssign,
-    isEqual
-};*/

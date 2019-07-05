@@ -11,7 +11,3 @@ export const observable = function (StoreClass, storeName) {
     store.add(storeName, new StoreClass());
     return makeProxy(new StoreClass(), [storeName]);
 };
-/*
-export default {
-    observable
-};*/
