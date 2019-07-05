@@ -1,3 +1,6 @@
+/**
+ * Created by lxp.
+ */
 import {isEqual, isObject, isArray, deepAssign} from './util';
 import store from './store';
 

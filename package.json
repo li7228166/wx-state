@@ -2,7 +2,7 @@
   "name": "wx-state",
   "version": "0.0.1",
   "description": "微信小程序状态管理",
-  "main": "dist/wx-state.js",
+  "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
     "build": "npm run clean && webpack --config webpack.config.js --progress --hide-modules"

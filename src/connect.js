@@ -1,3 +1,6 @@
+/**
+ * Created by lxp.
+ */
 import store from './store';
 import {deepAssign} from './util';
 import {addCompareItem, removeCompareItem} from './core';

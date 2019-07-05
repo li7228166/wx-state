@@ -1,3 +1,6 @@
+/**
+ * Created by lxp.
+ */
 /*
 * 判断是否为Object对象
 * */

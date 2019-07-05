@@ -1,3 +1,6 @@
+/**
+ * Created by lxp.
+ */
 /*
 * 存放未proxy封装的纯净store数据
 * */

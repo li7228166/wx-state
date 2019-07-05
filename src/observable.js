@@ -1,3 +1,6 @@
+/**
+ * Created by lxp.
+ */
 import store from './store';
 import {makeProxy} from './core';
 
