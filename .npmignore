@@ -2,6 +2,5 @@
 debug.log
 npm-debug.log
 node_modules
-src
 webpack.config.js
 example

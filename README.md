@@ -4,7 +4,7 @@
 #### 方法1. npm安装（需微信小程序基础库版本 2.2.1 或以上、及开发者工具 1.02.1808300 或以上）
 ```
 $ npm init
-$ npm install wx-state --save
+$ npm install wx-state --production
 ```
 注：详细步骤可参照微信小程序开发[文档](https://developers.weixin.qq.com/miniprogram/dev/devtools/npm.html "文档")
 
