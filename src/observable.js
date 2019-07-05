@@ -6,7 +6,7 @@ import {makeProxy} from './core';
 * */
 export const observable = function (StoreClass, storeName) {
     if (!storeName) {
-        throw 'observable修饰器，参数storeName 不能空';
+        throw 'observable, parameter cannot be empty';
     }
     store.add(storeName, new StoreClass());
     return makeProxy(new StoreClass(), [storeName]);

@@ -1,7 +1,7 @@
 ## 说明
 基于ES6 Proxy（目前暂未发现不支持对情况）开发的微信小程序状态管理库，基本零浸入的实现对小程序页面及组件的状态管理，方便对中大型项目进行开发。
 ## 安装
-#### 1. npm安装（基础库版本 2.2.1 或以上）
+#### 方法1. npm安装（需微信小程序基础库版本 2.2.1 或以上、及开发者工具 1.02.1808300 或以上）
 ```
 $ npm init
 $ npm install wx-state --save
@@ -9,7 +9,7 @@ $ npm install wx-state --save
 注：详细步骤可参照微信小程序开发[文档](https://developers.weixin.qq.com/miniprogram/dev/devtools/npm.html "文档")
 
 
-#### 2. 复制commonjs模块文件到项目
+#### 方法2. 复制commonjs模块文件到项目
 
 注：[下载文件](https://raw.githubusercontent.com/li7228166/wx-state/master/dist/wx-state.js "下载")后可复制到小程序项目任意目录即可，推荐utils目录。
 
@@ -28,7 +28,7 @@ class Article {
     }
     changeData() {
         this.nodeList = [1, 2, 3, 4];
-		//模拟用户操作
+        //模拟用户操作
         setTimeout(() => {
             this.brandList = [1, 2];
             setTimeout(() => {
@@ -40,7 +40,7 @@ class Article {
         }, 1500)
     }
 }
-// 参数'articleStore'必填且需要全局唯一
+//参数'articleStore'必填且需要全局唯一
 export default observable(Article, 'articleStore');
 ```
 #### 2. 连接state到页面或组件
@@ -55,12 +55,12 @@ const mapStateToData = function ({articleStore}) {
 };
 //Page
 Page(connect(mapStateToData)({
-	//...options，参见微信小程序官方文档"页面配置"
+    //...options，参见微信小程序官方文档"页面配置"
 }));
 
 //Component
 Component(connect(mapStateToData)({
-	//...options，参见微信小程序官方文档"自定义组件"
+    //...options，参见微信小程序官方文档"自定义组件"
 }));
 ```
 注：上方操作会将nodeList，brandList动态合并到Page或Component的data中（所以请尽量避免同原data中已定义的对象同名），从而实现this.data及.wxml文件相应对象的调用。
@@ -69,7 +69,7 @@ Component(connect(mapStateToData)({
 ```javascript
 import articleStore from './stores/article';
 App({
-	//...options
+    //...options
 })
 ```
 
