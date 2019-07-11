@@ -1,5 +1,10 @@
 /**
  * Created by lxp.
  */
-export {connect} from "./src/connect";
-export {observable} from "./src/observable";
+import {observable} from "./src/observable";
+import {connect} from "./src/connect";
+
+module.exports = {
+    observable,
+    connect
+};

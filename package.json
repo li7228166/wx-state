@@ -1,6 +1,6 @@
 {
   "name": "wx-state",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "微信小程序状态管理",
   "main": "index.js",
   "scripts": {
