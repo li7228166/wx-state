@@ -50,10 +50,10 @@ const _compare = function () {
             if (!isEqual(item.data, newData)) {
                 item.data = newData;
                 item.setData(deepAssign(newData));
-                console.log(`setData:${item.nodeId}`);
+                //console.log(`setData:${item.nodeId}`);
             }
         }
-        console.log('notifyCompare');
+        //console.log('notifyCompare');
     })
 };
 
