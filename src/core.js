@@ -54,7 +54,7 @@ const _compare = function () {
             }
         }
         //console.log('notifyCompare');
-    })
+    },50)
 };
 
 
