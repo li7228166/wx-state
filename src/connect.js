@@ -20,7 +20,7 @@ export const connect = function (mapStateToData) {
                 nodeId: nodeId,
                 setData: this.setData.bind(this),
                 mapStateToData: mapStateToData.bind(this),
-                data: mapState
+                data: deepAssign(mapState)
             });
             this.setData(deepAssign(mapState));
         };

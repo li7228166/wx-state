@@ -48,7 +48,7 @@ const _compare = function () {
             const newData = item.mapStateToData(store.getMap());
             //进行数据对比，判断是否需要触发setData重新渲染页面
             if (!isEqual(item.data, newData)) {
-                item.data = newData;
+                item.data = deepAssign(newData);
                 item.setData(deepAssign(newData));
                 //console.log(`setData:${item.nodeId}`);
             }
