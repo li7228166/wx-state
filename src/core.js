@@ -46,6 +46,15 @@ const _compare = function () {
         for (let key in _compareMap) {
             const item = _compareMap[key];
             const newData = item.mapStateToData(store.getMap());
+            //打印日志
+            if (item.data.stateCheck) {
+                console.log('--------------');
+                console.log('nodeId：' + item.nodeId);
+                console.log('oldData：' + item.data);
+                console.log('newData：' + newData);
+                console.log('isEqual：' + isEqual(item.data, newData));
+                console.log('--------------');
+            }
             //进行数据对比，判断是否需要触发setData重新渲染页面
             if (!isEqual(item.data, newData)) {
                 item.data = deepAssign(newData);
@@ -54,7 +63,7 @@ const _compare = function () {
             }
         }
         //console.log('notifyCompare');
-    },50)
+    }, 50)
 };
 
 
