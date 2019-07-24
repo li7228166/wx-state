@@ -49,10 +49,10 @@ const _compare = function () {
             //打印日志
             if (item.data.stateCheck) {
                 console.log('--------------');
-                console.log('nodeId：' + item.nodeId);
-                console.log('oldData：' + item.data);
-                console.log('newData：' + newData);
-                console.log('isEqual：' + isEqual(item.data, newData));
+                console.log('nodeId：', item.nodeId);
+                console.log('oldData：', item.data);
+                console.log('newData：', newData);
+                console.log('isEqual：', isEqual(item.data, newData));
                 console.log('--------------');
             }
             //进行数据对比，判断是否需要触发setData重新渲染页面
